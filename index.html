@@ -1,0 +1,58 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lorenzo Bedetti">
+    <meta name="description" content="elaborato 03 (Interaction design) sul tema 20 anni di Wikipedia">
+    <meta name="keywords" content="html, css, javascript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proj-03</title>
+    <!-- HOME-PAGE Proj-03 _ Lavoro di gruppo: Lorenzo Bedetti, Marzia Nasca -->
+
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/file.js"></script>
+</head>
+
+<body>
+    <!--_________ TOP NAV _________-->
+    <!-- Come fare una transizione figa tra le pagine? https://stackoverflow.com/questions/47391462/how-to-do-transition-effects-between-two-html-pages -->
+    <!-- <div class="top-nav">
+        <a id="home-page2" href="index.html"><p>Homepage</p></a>
+        <a class="active" id="info-page2" href="info.html"><p>Info</p></a>
+    </div> -->
+
+    <header>
+        <a href="https://it.wikipedia.org/wiki/Pagina_principale" class="logo"><img src="img/logo/Wikipedia.png" alt="logo-Wikipedia"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a id="home-page" href="index.html"><p>Homepage</p></a></li>
+                <li><a id="info-page" href="info.html"><p>Info</p></a></li>
+                <li><a id="indice-page" href=""><p>Indice</p></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <hr class="line">
+
+    <!--_________ CONTENITORE _________-->
+    <div id="container">
+
+        <!-- GRUPPO: immagini e bottone -->
+        <div id="elements">
+
+            <!-- IMMAGINI -->
+            <div id="element_img">
+                <img id="image_selected">
+            </div>
+            <!-- BOTTONE -->
+            <div id="element_testo"> 
+                <button onclick="get_random_image()"> <i class="fas fa-random"></i> <h4>Una storia a caso</h4> </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
