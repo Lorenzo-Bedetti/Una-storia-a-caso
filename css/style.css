@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+
+
+/*_________ STILI DI TESTO _________ usare font di Wikipedia */
+    h1 {
+        font-family: 'Georgia';
+        font-weight: 100;
+        font-size: 100px;
+    }
+    h2 {
+        font-family: 'Georgia';
+        font-weight: 200;
+        font-size: 30px;
+    }
+    h3 {
+        font-family: sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        text-justify: auto;
+    }
+    p {
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+
+    /* TESTO BOTTONE (Homepage) */
+    h4 {
+        font-family: 'Georgia';
+        font-weight: 100;
+        font-size: 30px;
+        color: #0b52b2;
+        text-decoration: none;
+    }
+    h4:hover {
+        text-decoration: underline;
+    }
+
+.line {
+    border: 1px solid black;
+    opacity: 30%;
+}
+
+
+
+/*_________ TOP-NAV _________*/
+header {
+    display: flex;
+    align-items: center;
+}
+    nav {
+        margin-left: 13%;
+    }
+
+    .nav_links {
+        margin-left: 0px;
+        list-style: none;  
+    }
+
+    .nav_links li {
+        display: inline-block;
+        /* padding-left: 200px; */
+    }
+
+    .nav_links a {
+        color: #0b52b2;
+        text-decoration: none;
+    }
+    .nav_links a:hover {
+        text-decoration: underline;
+    }
+
+.logo {
+    width: auto;
+    transform: scale(0.8);
+    margin-left: 6%;
+    cursor: pointer;
+}
+
+
+
+/*_________ STILI TESTI _ TOP-NAV _________ home-page + info-page */
+    #home-page {
+        margin-right: 200px;
+    }
+    #info-page {
+        margin-right: 200px;
+    }
+    #indice-page {
+        margin-left: 0px;
+    }
+
+
+
+/*_________ CONTENITORE _________*/
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* GRUPPO: immagini e bottone */
+#elements {
+    margin-top: 70px;
+    width: 1000px;
+    height: 700px;
+    /* border: 1px solid black; */
+}
+
+    /* Spazio IMG selezionata */
+    #element_img{
+        width: 100%;
+        height: 600px;
+        border: 1px solid black;
+    }
+    
+        /* STILE IMG */
+        img {
+            width: 100%;
+            height: 100%;
+            /* fare in modo che la foto vada oltre il margine ma nascosta */
+        }
+
+    /* TESTO -> bottone */
+    #element_testo {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        /* BOTTONE -> stile testo */
+        button {
+            margin-top: 50px;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+
+/*_________ CONCEPT-TESTI _________*/
+.container-concept {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-concept {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 1000px;
+    height: 100%;
+    /* background-color: pink; */
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(7, 150px);
+    column-gap: 0px;
+    row-gap: 10px;
+}
+/* .grid-item {
+    border: 2px solid royalblue;
+} */
+
+    /* grid-area: row-start, column-start, row-end, column-end; */
+    .item-1 {
+        grid-area: 1/1/2/5;
+    }
+    .item-2 {
+        grid-area: 2/1/6/5;
+    }
+    /* sezione in cui mostrare il video che spiega come dovrebbe funzionare il concetto: andando sopra immagine e selezione, compaiono riquadri che mostrano le fonti e con cui si possono raggiungerle _ è giusto usare questo strumento? Non rimanderebbe troppo a Wikipedia discostandosi dal progetto? */
+    .item-3 {
+        grid-area: 2/5/3/6;
+    }
+    .item-4 {
+        grid-area: 3/5/4/6;
+    }
+    .item-5 {
+        grid-area: 7/1/8/3;
+    }
+
+.img-info {
+    width: auto;
+    float: right;
+    transform: scale(0.8);
+    /* background-color: powderblue; */
+}
